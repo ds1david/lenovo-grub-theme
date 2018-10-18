@@ -4,4 +4,4 @@
 
 ### Instalação:
 
-    `wget -O - https://github.com/shvchk/poly-dark/raw/master/install.sh | bash`
+    wget -O - https://github.com/ds1david/lenovo-grub-theme/raw/master/install.sh | bash
