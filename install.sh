@@ -40,7 +40,7 @@ rm -rf master.zip ${THEME}-master
 
 if [ -e /usr/share/plymouth/themes/default.grub ]; then
     echo 'Removing blink purple screen'
-    sudo cat << '    EOF' >> /usr/share/plymouth/themes/default.grub
+    sudo cat << '    EOF' >> /usr/share/plymouth/themes/ubuntu-logo/ubuntu-logo.grub
     if background_color 0,0,0; then
       clear
     fi
