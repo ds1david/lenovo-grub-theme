@@ -28,7 +28,7 @@ sudo sed -i 's/^\(GRUB_TERMINAL\w*=.*\)/#\1/' /etc/default/grub
 
 echo 'Removing empty lines at the end of GRUB config' # optional
 sudo sed -i -e :a -e '/^\n*$/{$d;N;};/\n$/ba' /etc/default/grub
-
+udo
 echo 'Adding new line to GRUB config just in case' # optional
 echo | sudo tee -a /etc/default/grub
 
@@ -40,7 +40,7 @@ rm -rf master.zip ${THEME}-master
 
 if [ -e /usr/share/plymouth/themes/default.grub ]; then
     echo 'Removing blink purple screen'
-    cat << '    EOF' >> /usr/share/plymouth/themes/default.grub
+    sudo cat << '    EOF' >> /usr/share/plymouth/themes/default.grub
     if background_color 0,0,0; then
       clear
     fi
